@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 13:57:59 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/23 13:52:38 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/23 19:00:10 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst_counter++;
 	while (src[src_counter] != '\0')
 		src_counter++;
-	if (dstsize == 0)
-		return (src_counter);
-	if (dstsize <= dst_counter)
+	if (dstsize == 0 || dstsize <= dst_counter)
 		return (src_counter + dstsize);
 	size = dst_counter + src_counter;
 	while (*src != '\0' && dst_counter < dstsize - 1)
