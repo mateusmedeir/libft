@@ -1,39 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/05 17:31:30 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/24 16:20:11 by mmedeiro         ###   ########.fr       */
+/*   Created: 2022/05/26 12:33:39 by mmedeiro          #+#    #+#             */
+/*   Updated: 2022/05/26 12:33:41 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+t_list	*ft_lstnew(void *content)
 {
-	char	*p_dst;
-	char	*p_src;
-	size_t	counter;
+	struct s_list	*new;
 
-	p_src = (char *) src;
-	p_dst = (char *) dst;
-	if (!p_src && !p_dst)
+	new = malloc (sizeof (*new));
+	if (!new)
 		return (NULL);
-	if (p_dst < p_src)
-	{
-		return (ft_memcpy(dst, src, len));
-	}
-	else
-	{
-		counter = len - 1;
-		while (counter + 1 > 0)
-		{
-			p_dst[counter] = p_src[counter];
-			counter--;
-		}	
-	}
-	return (p_dst);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }

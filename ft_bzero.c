@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 11:59:21 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/13 12:21:48 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/24 16:15:30 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ void	ft_bzero(void *s, size_t n)
 	counter = 0;
 	while (counter < n)
 	{
-		*pointer = '\0';
-		pointer++;
+		pointer[counter] = '\0';
 		counter++;
 	}
 }

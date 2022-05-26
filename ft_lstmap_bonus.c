@@ -1,34 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 13:57:59 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/24 17:29:19 by mmedeiro         ###   ########.fr       */
+/*   Created: 2022/05/26 12:28:44 by mmedeiro          #+#    #+#             */
+/*   Updated: 2022/05/26 12:39:54 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	size_t	dst_counter;
-	size_t	src_counter;
-	size_t	size;
+	t_list	*new;
+	t_list	*pointer;
 
-	dst_counter = ft_strlen (dst);
-	src_counter = ft_strlen (src);
-	if (dstsize <= dst_counter)
-		return (src_counter + dstsize);
-	size = dst_counter + src_counter;
-	while (*src != '\0' && dst_counter < dstsize - 1)
+	new = ft_lstnew((*f)(lst->content));
+	if (!new)
+		return (new);
+	pointer = new;
+	lst = lst->next;
+	while (lst != NULL)
 	{
-		dst[dst_counter] = *src;
-		dst_counter++;
-		src++;
+		new->next = ft_lstnew((*f)(lst->content));
+		if (!new->next)
+		{
+			ft_lstdelone (pointer, del);
+			return (NULL);
+		}
+		new = new->next;
+		lst = lst->next;
 	}
-	dst[dst_counter] = '\0';
-	return (size);
+	return (pointer);
 }

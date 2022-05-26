@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 12:02:16 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/19 13:00:07 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/25 12:17:47 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	counter;
+	size_t			counter;
 	unsigned char	*p_s1;
 	unsigned char	*p_s2;
 
@@ -24,7 +24,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	if (n == 0)
 		return (0);
 	while (p_s1[counter] == p_s2[counter] && p_s1[counter]
-			&& p_s2[counter] && counter < n - 1)
+		&& p_s2[counter] && counter < n - 1)
 		counter++;
 	return (p_s1[counter] - p_s2[counter]);
 }

@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 14:03:58 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/19 15:03:35 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/25 13:02:41 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,15 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*pointer;
-	char	*p_pointer;
-	size_t	counter;
 
+	if (count == 0 || size == 0)
+	{
+		count = 1;
+		size = 1;
+	}
 	pointer = malloc(count * size);
 	if (!pointer)
 		return (NULL);
-	counter = 0;
-	p_pointer = (char *)pointer;
-	while (counter < count * size)
-	{
-		p_pointer[counter] = '\0';
-		counter++;
-	}
-	return (p_pointer);
+	ft_bzero (pointer, count * size);
+	return (pointer);
 }

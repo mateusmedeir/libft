@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 15:40:54 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/19 16:05:41 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/25 15:36:33 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,35 +26,26 @@ static int	check_set(char s, char const *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*pointer;
-	char	*new;
 	int		start;
 	int		end;
 	int		counter;
 
 	start = -1;
 	end = 0;
-    counter = 0;
-    while (s1[counter] != '\0')
-    {
-        if (check_set (s1[counter], set))
-        {
-            if (start == -1)
-                start = counter;
-            else
-                end = counter;
-        }
-		counter++;
-    }
-	pointer = malloc ((end - start) * sizeof (char) + 2);
-	if (!pointer)
-		return NULL;
-	new = pointer;
-	while (start <= end)
+	counter = 0;
+	while (s1[counter] != '\0')
 	{
-		*pointer = s1[start];
-		pointer++;
-		start++;
+		if (check_set (s1[counter], set))
+		{
+			if (start == -1)
+				start = counter;
+			else
+				end = counter;
+		}
+		counter++;
 	}
-	*pointer = '\0';
-	return (new);
+	pointer = ft_substr (s1, start, (end - start) + 1);
+	if (!pointer)
+		return (NULL);
+	return (pointer);
 }

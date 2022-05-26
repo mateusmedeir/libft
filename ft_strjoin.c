@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 14:27:53 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/19 15:42:21 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/25 13:04:22 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		counter;
 
 	counter = 0;
-	pointer = malloc (sizeof(s1) + sizeof(s2) + 1);
+	pointer = malloc (ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!pointer)
 		return (NULL);
 	counter = 0;

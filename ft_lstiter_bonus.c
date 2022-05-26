@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 13:57:59 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/24 17:29:19 by mmedeiro         ###   ########.fr       */
+/*   Created: 2022/05/26 12:31:06 by mmedeiro          #+#    #+#             */
+/*   Updated: 2022/05/26 12:31:07 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	size_t	dst_counter;
-	size_t	src_counter;
-	size_t	size;
-
-	dst_counter = ft_strlen (dst);
-	src_counter = ft_strlen (src);
-	if (dstsize <= dst_counter)
-		return (src_counter + dstsize);
-	size = dst_counter + src_counter;
-	while (*src != '\0' && dst_counter < dstsize - 1)
+	while (lst)
 	{
-		dst[dst_counter] = *src;
-		dst_counter++;
-		src++;
+		(*f)(lst->content);
+		lst = lst->next;
 	}
-	dst[dst_counter] = '\0';
-	return (size);
 }
