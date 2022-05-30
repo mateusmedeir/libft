@@ -35,4 +35,4 @@ fclean:		clean
 
 re:			fclean all
 
-.PHONY:		all bonus clean fclean re libft.a
+.PHONY:		all bonus clean fclean re

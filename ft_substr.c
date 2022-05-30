@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 14:20:12 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/25 15:31:55 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/30 12:08:38 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	counter = 0;
 	while (s[counter] != '\0')
 		counter++;
-	if (start >= len)
+	if (start >= counter)
 		len = 0;
 	if (len > counter)
 		pointer = malloc ((counter + 1) * sizeof(char));
@@ -28,8 +28,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		pointer = malloc ((len + 1) * sizeof(char));
 	if (!pointer)
 		return (NULL);
-	if (start >= counter)
-		return (pointer);
 	counter = 0;
 	while (s[counter] != '\0' && counter < len)
 	{

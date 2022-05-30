@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 12:02:43 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/25 14:58:06 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/30 11:56:55 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	char	*pointer;
 
-	if (len == 0)
+	if (!needle)
 		return ((char *)haystack);
 	while (*haystack != '\0' && len > 0)
 	{
