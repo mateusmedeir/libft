@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 12:28:44 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/26 12:39:54 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/30 12:34:27 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new->next = ft_lstnew((*f)(lst->content));
 		if (!new->next)
 		{
-			ft_lstdelone (pointer, del);
+			ft_lstclear (&pointer, del);
 			return (NULL);
 		}
 		new = new->next;

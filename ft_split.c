@@ -6,7 +6,7 @@
 /*   By: mmedeiro <mmedeiro@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 17:03:28 by mmedeiro          #+#    #+#             */
-/*   Updated: 2022/05/25 12:08:25 by mmedeiro         ###   ########.fr       */
+/*   Updated: 2022/05/30 13:04:14 by mmedeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	how_many_splits(char const *s, char c)
 	counter = 0;
 	while (s[counter])
 	{
-		if (s[counter] == c && (counter == 0 || s[counter - 1] != c))
+		if (s[counter] == c && (counter != 0 || s[counter - 1] != c))
 			split++;
 		counter++;
 	}
