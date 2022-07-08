@@ -3,8 +3,8 @@
 <h2>About</h2>
 
 ---
-<p>This project consists of creating some of the most used functions in the C language and others exclusive to it.</p>
+This project consists of creating some of the most used functions in the C language and others exclusive to it.
 
-<h3>First part functions</h3>
+###First part functions
 
 * [**ft_isalpha:**](/ft_isalpha.c) checks if it is an alphabetic character
