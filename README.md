@@ -5,6 +5,6 @@
 ---
 This project consists of creating some of the most used functions in the C language and others exclusive to it.
 
-###First part functions
+### First part functions
 
 * [**ft_isalpha:**](/ft_isalpha.c) checks if it is an alphabetic character
