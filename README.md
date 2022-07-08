@@ -7,4 +7,4 @@ This project consists of creating some of the most used functions in the C langu
 
 ### First part functions
 
-* [**ft_isalpha:**](/ft_isalpha.c) checks if it is an alphabetic character
+* [**ft_isalpha:**](/libft_files/ft_isalpha.c) checks if it is an alphabetic character
