@@ -1,5 +1,5 @@
 <h1 align="center">Libft - 42cursus</h1>
-<img src="img/libft_git_310.png" width="310" align="center" />
+<p align="center"><img src="img/libft_git_310.png" width="310" /></p>
 <h3>About</h3>
 
 ---
