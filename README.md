@@ -3,5 +3,5 @@
 <h3>About</h3>
 
 ---
-> _this project consists of creating some of the most used functions in the C language and others exclusive to it._
+<p>This project consists of creating some of the most used functions in the C language and others exclusive to it.</p>
 
