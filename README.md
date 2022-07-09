@@ -4,7 +4,7 @@
 ## About
 
 
-  This project consists of creating some of the most used functions in the C language and others exclusive to it.
+    This project consists of creating some of the most used functions in the C language and others exclusive to it.
 
 
 ### Libc functions
