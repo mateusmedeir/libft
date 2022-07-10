@@ -1,10 +1,9 @@
 <h1 align="center">Libft - 42cursus</h1>
+<p align="center">My very first own library</p>
 
 ## About
 
----
 > This project consists of creating some of the most used functions in the C language and others exclusive to it.
----
 
 ### Libc functions
 
