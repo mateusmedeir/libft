@@ -1,5 +1,5 @@
 <h1 align="center">Libft - 42cursus</h1>
-<p align="center">My very first own library</p>
+<p align="center"><strong>My very first own library</strong></p>
 
 ## About
 
