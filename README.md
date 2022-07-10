@@ -21,3 +21,14 @@
 * [**ft_memmove:**](/libft_files/ft_memmove.c) copy `len` bytes from `src` to `dst` (The memory areas may overlap);
 * [**ft_strlcpy:**](/libft_files/ft_strlcpy.c) copy `dstsize - 1` characters from `src` to `dst`, ending with NULL;
 * [**ft_strlcat:**](/libft_files/ft_strlcat.c) append the `dstsize - ft_strlen(dst) - 1` characters from `src` to `dst`, ending with NULL;
+* [**ft_toupper:**](/libft_files/ft_toupper.c) 
+* [**ft_tolower:**](/libft_files/ft_tolower.c) 
+* [**ft_strchr:**](/libft_files/ft_strchr.c) 
+* [**ft_strrchr:**](/libft_files/ft_strrchr.c) 
+* [**ft_strncmp:**](/libft_files/ft_strncmp.c) 
+* [**ft_memchr:**](/libft_files/ft_memchr.c) 
+* [**ft_memcmp:**](/libft_files/ft_memcmp.c) 
+* [**ft_strnstr:**](/libft_files/ft_strnstr.c) 
+* [**ft_atoi:**](/libft_files/ft_atoi.c) 
+* [**ft_calloc:**](/libft_files/ft_calloc.c) 
+* [**ft_strdup:**](/libft_files/ft_strdup.c) 
