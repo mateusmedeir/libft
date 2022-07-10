@@ -10,7 +10,7 @@
 ### Libc functions
 
  [**ft_isalpha:**](/libft_files/ft_isalpha.c) checks if it is an alphabetic character;
-[**ft_isdigit:**](/libft_files/ft_isdigit.c) checks if it is a decimal digit character;
+ [**ft_isdigit:**](/libft_files/ft_isdigit.c) checks if it is a decimal digit character;
 [**ft_isalnum:**](/libft_files/ft_isalnum.c) checks if it is an alphanumeric character;
 [**ft_isascii:**](/libft_files/ft_isascii.c) checks if it is an ASCII character;
 [**ft_isprint:**](/libft_files/ft_isprint.c) checks if it is a printable character;
