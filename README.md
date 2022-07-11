@@ -3,7 +3,7 @@
 
 ## About
 ---
-This project consists of creating our own library with some of the most used functions in the C language and others that are exclusive to it. It will be
+> This project consists of creating our own library with some of the most used functions in the C language and others that are exclusive to it. It will be
 very useful, since we will use it in our next projects in C.
 ---
 
