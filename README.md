@@ -1,7 +1,7 @@
 <h1 align="center">Libft - 42cursus</h1>
 <p align="center"><strong>My very first own library</strong></p>
 
-## ❓ About
+## 📑 About
 ---
 > This project consists of creating our own library with some of the most used functions in the C language and others that are exclusive to it. It will be
 very useful, since we will use it in our next projects in C.
@@ -32,3 +32,5 @@ very useful, since we will use it in our next projects in C.
 * [**ft_atoi:**](/libft/ft_atoi.c) 
 * [**ft_calloc:**](/libft/ft_calloc.c) 
 * [**ft_strdup:**](/libft/ft_strdup.c) 
+
+### Part 2 - Additional functions
