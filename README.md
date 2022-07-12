@@ -35,8 +35,8 @@ very useful, since we will use it in our next projects in C.
 
 ### Part 2 - Additional functions
 
-* [**ft_substr:**](/libft/ft_substr.c) 
-* [**ft_strjoin:**](/libft/ft_strjoin.c) 
+* [**ft_substr:**](/libft/ft_substr.c) returns a substring from the string `s`. The substring begins at index `start` and is of maximum size `len`.
+* [**ft_strjoin:**](/libft/ft_strjoin.c) returns a new string, which is the result of the concatenation of `s1` and `s2`.
 * [**ft_strtrim:**](/libft/ft_strtrim.c) 
 * [**ft_split:**](/libft/ft_split.c) 
 * [**ft_itoa:**](/libft/ft_itoa.c) 
@@ -47,5 +47,5 @@ very useful, since we will use it in our next projects in C.
 * [**ft_putendl_fd:**](/libft/ft_putendl_fd.c) 
 * [**ft_putnbr_fd:**](/libft/ft_putnbr_fd.c) 
 
-### Bonus part
+### Bonus functions
 
