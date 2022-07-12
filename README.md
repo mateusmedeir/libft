@@ -34,3 +34,18 @@ very useful, since we will use it in our next projects in C.
 * [**ft_strdup:**](/libft/ft_strdup.c) 
 
 ### Part 2 - Additional functions
+
+* [**ft_substr:**](/libft/ft_substr.c) 
+* [**ft_strjoin:**](/libft/ft_strjoin.c) 
+* [**ft_strtrim:**](/libft/ft_strtrim.c) 
+* [**ft_split:**](/libft/ft_split.c) 
+* [**ft_itoa:**](/libft/ft_itoa.c) 
+* [**ft_strmapi:**](/libft/ft_strmapi.c) 
+* [**ft_striteri:**](/libft/ft_striteri.c) 
+* [**ft_putchar_fd:**](/libft/ft_putchar_fd.c) 
+* [**ft_putstr_fd:**](/libft/ft_putstr_fd.c) 
+* [**ft_putendl_fd:**](/libft/ft_putendl_fd.c) 
+* [**me ft_putnbr_fd:**](/libft/me ft_putnbr_fd.c) 
+
+### Bonus part
+
