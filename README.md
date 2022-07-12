@@ -45,7 +45,7 @@ very useful, since we will use it in our next projects in C.
 * [**ft_putchar_fd:**](/libft/ft_putchar_fd.c) 
 * [**ft_putstr_fd:**](/libft/ft_putstr_fd.c) 
 * [**ft_putendl_fd:**](/libft/ft_putendl_fd.c) 
-* [**me ft_putnbr_fd:**](/libft/me ft_putnbr_fd.c) 
+* [**ft_putnbr_fd:**](/libft/ft_putnbr_fd.c) 
 
 ### Bonus part
 
