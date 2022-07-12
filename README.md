@@ -31,7 +31,7 @@ very useful, since we will use it in our next projects in C.
 [**ft_strnstr:**](/libft/ft_strnstr.c) \
 [**ft_atoi:**](/libft/ft_atoi.c) \
 [**ft_calloc:**](/libft/ft_calloc.c) \
-[**ft_strdup:**](/libft/ft_strdup.c) \
+[**ft_strdup:**](/libft/ft_strdup.c)
 
 ### Part 2 - Additional functions
 
@@ -45,7 +45,7 @@ very useful, since we will use it in our next projects in C.
 [**ft_putchar_fd:**](/libft/ft_putchar_fd.c) \
 [**ft_putstr_fd:**](/libft/ft_putstr_fd.c) \
 [**ft_putendl_fd:**](/libft/ft_putendl_fd.c) \
-[**ft_putnbr_fd:**](/libft/ft_putnbr_fd.c) \
+[**ft_putnbr_fd:**](/libft/ft_putnbr_fd.c)
 
 ### Bonus functions
 
