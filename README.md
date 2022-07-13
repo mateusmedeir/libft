@@ -42,10 +42,10 @@ very useful, since we will use it in our next projects in C.
 [**ft_itoa:**](/libft/ft_itoa.c) returns a string representing the integer received as an argument.\
 [**ft_strmapi:**](/libft/ft_strmapi.c) Applies the function `f` to each character of the string `s`, and passing its index as first argument to create a new string resulting from successive applications of `f`.\
 [**ft_striteri:**](/libft/ft_striteri.c) Applies the function `f` on each character of the string passed as argument, passing its index as first argument. Each character is passed by address to `f` to be modified if necessary.\
-[**ft_putchar_fd:**](/libft/ft_putchar_fd.c) \
-[**ft_putstr_fd:**](/libft/ft_putstr_fd.c) \
-[**ft_putendl_fd:**](/libft/ft_putendl_fd.c) \
-[**ft_putnbr_fd:**](/libft/ft_putnbr_fd.c)
+[**ft_putchar_fd:**](/libft/ft_putchar_fd.c) Outputs the character `c` to the given file descriptor.\
+[**ft_putstr_fd:**](/libft/ft_putstr_fd.c) Outputs the string `s` to the given file descriptor.\
+[**ft_putendl_fd:**](/libft/ft_putendl_fd.c) Outputs the string `s` to the given file descriptor followed by a newline.\
+[**ft_putnbr_fd:**](/libft/ft_putnbr_fd.c) Outputs the integer `n` to the given file descriptor.
 
 ### Bonus functions
 
