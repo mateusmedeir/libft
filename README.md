@@ -49,12 +49,12 @@ very useful, since we will use it in our next projects in C.
 
 ### Bonus functions
 
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
-[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_lstnew:**](/libft/ft_lstnew.c) \
+[**ft_lstadd_front:**](/libft/ft_lstadd_front.c) \
+[**ft_lstsize:**](/libft/ft_lstsize.c) \
+[**ft_lstlast:**](/libft/ft_lstlast.c) \
+[**ft_lstadd_back:**](/libft/ft_lstadd_back.c) \
+[**ft_lstdelone:**](/libft/ft_lstdelone.c) \
+[**ft_lstclear:**](/libft/ft_lstclear.c) \
+[**ft_lstiter:**](/libft/ft_lstiter.c) \
+[**ft_lstmap:**](/libft/ft_lstmap.c) 
