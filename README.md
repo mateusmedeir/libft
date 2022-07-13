@@ -38,7 +38,7 @@ very useful, since we will use it in our next projects in C.
 [**ft_substr:**](/libft/ft_substr.c) returns a substring from the string `s`. The substring begins at index `start` and is of maximum size `len`.\
 [**ft_strjoin:**](/libft/ft_strjoin.c) returns a new string, which is the result of the concatenation of `s1` and `s2`.\
 [**ft_strtrim:**](/libft/ft_strtrim.c) returns a copy of `s1` with the characters specified in `set` removed from the beginning and the end of the string.\
-[**ft_split:**](/libft/ft_split.c) returns an array of strings obtained by splitting `s` using the character ’c’ as a delimiter. The array must end with a NULL pointer.\
+[**ft_split:**](/libft/ft_split.c) returns an array of strings obtained by splitting `s` using the character `c` as a delimiter. The array must end with a NULL pointer.\
 [**ft_itoa:**](/libft/ft_itoa.c) returns a string representing the integer received as an argument.\
 [**ft_strmapi:**](/libft/ft_strmapi.c) Applies the function `f` to each character of the string `s`, and passing its index as first argument to create a new string resulting from successive applications of `f`.\
 [**ft_striteri:**](/libft/ft_striteri.c) Applies the function `f` on each character of the string passed as argument, passing its index as first argument. Each character is passed by address to `f` to be modified if necessary.\
