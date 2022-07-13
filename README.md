@@ -10,7 +10,7 @@ very useful, since we will use it in our next projects in C.
 ### Part 1 - Libc functions
 
 | Name                  | Description                                                                                                                                 |
-| :-------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | [**ft_isalpha**](/libft/ft_isalpha.c) | checks if it is an alphabetic character                                                                                     |
 | [**ft_isdigit**](/libft/ft_isdigit.c) | checks if it is a decimal digit character                                                                                   |
 | [**ft_isalnum**](/libft/ft_isalnum.c) | checks if it is an alphanumeric character                                                                                   |
