@@ -49,3 +49,12 @@ very useful, since we will use it in our next projects in C.
 
 ### Bonus functions
 
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
+[**ft_substr:**](/libft/ft_substr.c) \
