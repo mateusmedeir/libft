@@ -53,12 +53,14 @@ very useful, since we will use it in our next projects in C.
 
 ### Bonus functions
 
-[**ft_lstnew:**](/libft/ft_lstnew.c) returns a new node. The member variable `content` is initialized with the value of the parameter `content`. The variable `next` is initialized to NULL;\
-[**ft_lstadd_front:**](/libft/ft_lstadd_front.c) Adds the node `new` at the beginning of the list;\
-[**ft_lstsize:**](/libft/ft_lstsize.c) Counts the number of nodes in a list;\
-[**ft_lstlast:**](/libft/ft_lstlast.c) Returns the last node of the list;\
-[**ft_lstadd_back:**](/libft/ft_lstadd_back.c) Adds the node `new` at the end of the list;\
-[**ft_lstdelone:**](/libft/ft_lstdelone.c) Takes as a parameter a node and frees the memory of the node’s content using the function `del` given as a parameter and free the node. The memory of `next` must not be freed;\
-[**ft_lstclear:**](/libft/ft_lstclear.c) Deletes and frees the given node and every successor of that node, using the function `del` and free. Finally, the pointer to the list must be set to NULL;\
-[**ft_lstiter:**](/libft/ft_lstiter.c) Iterates the list `lst` and applies the function `f` on the content of each node;\
-[**ft_lstmap:**](/libft/ft_lstmap.c) Iterates the list `lst` and applies the function `f` on the content of each node. Creates a new list resulting of the successive applications of the function `f`. The `del` function is used to delete the content of a node if needed;
+| Name                  | Description                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**ft_lstnew:**](/libft/ft_lstnew.c)             | returns a new node. The member variable `content` is initialized with the value of the parameter `content`. The variable `next` is initialized to NULL |
+| [**ft_lstadd_front:**](/libft/ft_lstadd_front.c) | Adds the node `new` at the beginning of the list                                                                 |
+| [**ft_lstsize:**](/libft/ft_lstsize.c)           | Counts the number of nodes in a list                                                                             |
+| [**ft_lstlast:**](/libft/ft_lstlast.c)           |Returns the last node of the list                                                                                 |
+| [**ft_lstadd_back:**](/libft/ft_lstadd_back.c)   | Adds the node `new` at the end of the list                                                                       |
+| [**ft_lstdelone:**](/libft/ft_lstdelone.c)       | Takes as a parameter a node and frees the memory of the node’s content using the function `del` given as a parameter and free the node. The memory of `next` must not be freed |
+| [**ft_lstclear:**](/libft/ft_lstclear.c)         | Deletes and frees the given node and every successor of that node, using the function `del` and free. Finally, the pointer to the list must be set to NULL |
+| [**ft_lstiter:**](/libft/ft_lstiter.c)           | Iterates the list `lst` and applies the function `f` on the content of each node                                 |
+| [**ft_lstmap:**](/libft/ft_lstmap.c)             | Iterates the list `lst` and applies the function `f` on the content of each node. Creates a new list resulting of the successive applications of the function `f`. The `del` function is used to delete the content of a node if needed |
