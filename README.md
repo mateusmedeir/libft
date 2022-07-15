@@ -23,17 +23,17 @@ very useful, since we will use it in our next projects in C.
 | [**ft_memmove**](/libft/ft_memmove.c) | copy `len` bytes from `src` to `dst` (The memory areas may overlap)                                                         |
 | [**ft_strlcpy**](/libft/ft_strlcpy.c) | copy `dstsize - 1` characters from `src` to `dst`, ending with NULL                                                         |
 | [**ft_strlcat**](/libft/ft_strlcat.c) | append the `dstsize - ft_strlen(dst) - 1` characters from `src` to `dst`, ending with NULL                                  |
-| [**ft_toupper**](/libft/ft_toupper.c) |                                                                                                                             |
-| [**ft_tolower**](/libft/ft_tolower.c) |                                                                                                                             |
-| [**ft_strchr**](/libft/ft_strchr.c)   |                                                                                                                             |
-| [**ft_strrchr**](/libft/ft_strrchr.c) |                                                                                                                             |
-| [**ft_strncmp**](/libft/ft_strncmp.c) |                                                                                                                             |
-| [**ft_memchr**](/libft/ft_memchr.c)   |                                                                                                                             |
-| [**ft_memcmp**](/libft/ft_memcmp.c)   |                                                                                                                             |
-| [**ft_strnstr**](/libft/ft_strnstr.c) |                                                                                                                             |
-| [**ft_atoi**](/libft/ft_atoi.c)       |                                                                                                                             |
-| [**ft_calloc**](/libft/ft_calloc.c)   |                                                                                                                             |
-| [**ft_strdup**](/libft/ft_strdup.c)   |                                                                                                                             |
+| [**ft_toupper**](/libft/ft_toupper.c) | convert lowercase letters to uppercase                                                                                      |
+| [**ft_tolower**](/libft/ft_tolower.c) | convert uppercase letters to lowercase                                                                                      |
+| [**ft_strchr**](/libft/ft_strchr.c)   | returns a pointer to the first occurrence of the character `c` in the string `s`                                            |
+| [**ft_strrchr**](/libft/ft_strrchr.c) | returns a pointer to the last occurrence of the character `c` in the string `s`                                             |
+| [**ft_strncmp**](/libft/ft_strncmp.c) | compare the first `n` characters of strings `s1` and `s2` and return 0 if they are equal, otherwise return the difference between them |
+| [**ft_memchr**](/libft/ft_memchr.c)   | return a pointer to the first instance of `c` in `s` until `n` bytes or NULL if the character does not occur in the given memory area |
+| [**ft_memcmp**](/libft/ft_memcmp.c)   | compare the first `n` characters of the memory areas `s1` and `s2` and return 0 if they are equal, otherwise return the difference between them |
+| [**ft_strnstr**](/libft/ft_strnstr.c) | copies the string `src`, including the terminating null byte, to the buffer `dest`                                          |
+| [**ft_atoi**](/libft/ft_atoi.c)       | convert string `str` to int                                                                                                 |
+| [**ft_calloc**](/libft/ft_calloc.c)   | allocate unused space for an array of `count`elements each of whose size in bytes is `size`.  The space shall be initialized to all bits 0 |
+| [**ft_strdup**](/libft/ft_strdup.c)   | returns a pointer to a new string which is a duplicate of the string `s`                                                    |
 
 ### Part 2 - Additional functions
 
