@@ -9,8 +9,8 @@ very useful, since we will use it in our next projects in C.
 
 ### Part 1 - Libc functions
 
-| Name                  | Description                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                  | Description                                                                                                                 |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | [**ft_isalpha**](/libft/ft_isalpha.c) | checks if it is an alphabetic character                                                                                     |
 | [**ft_isdigit**](/libft/ft_isdigit.c) | checks if it is a decimal digit character                                                                                   |
 | [**ft_isalnum**](/libft/ft_isalnum.c) | checks if it is an alphanumeric character                                                                                   |
@@ -37,8 +37,8 @@ very useful, since we will use it in our next projects in C.
 
 ### Part 2 - Additional functions
 
-| Name                  | Description                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                         | Description                                                                                                          |
+| -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | [**ft_substr:**](/libft/ft_substr.c)         | returns a substring from the string `s`. The substring begins at index `start` and is of maximum size `len`          |
 | [**ft_strjoin:**](/libft/ft_strjoin.c)       | returns a new string, which is the result of the concatenation of `s1` and `s2`                                      |
 | [**ft_strtrim:**](/libft/ft_strtrim.c)       | returns a copy of `s1` with the characters specified in `set` removed from the beginning and the end of the string   |
@@ -53,8 +53,8 @@ very useful, since we will use it in our next projects in C.
 
 ### Bonus functions
 
-| Name                  | Description                                                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name                                             | Description                                                                                                      |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
 | [**ft_lstnew:**](/libft/ft_lstnew.c)             | returns a new node. The member variable `content` is initialized with the value of the parameter `content`. The variable `next` is initialized to NULL |
 | [**ft_lstadd_front:**](/libft/ft_lstadd_front.c) | Adds the node `new` at the beginning of the list                                                                 |
 | [**ft_lstsize:**](/libft/ft_lstsize.c)           | Counts the number of nodes in a list                                                                             |
