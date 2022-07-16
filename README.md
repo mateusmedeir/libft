@@ -64,3 +64,7 @@ very useful, since we will use it in our next projects in C.
 | [**ft_lstclear:**](/libft/ft_lstclear.c)         | Deletes and frees the given node and every successor of that node, using the function `del` and free. Finally, the pointer to the list must be set to NULL |
 | [**ft_lstiter:**](/libft/ft_lstiter.c)           | Iterates the list `lst` and applies the function `f` on the content of each node                                 |
 | [**ft_lstmap:**](/libft/ft_lstmap.c)             | Iterates the list `lst` and applies the function `f` on the content of each node. Creates a new list resulting of the successive applications of the function `f`. The `del` function is used to delete the content of a node if needed |
+
+## ⚙️ Usage
+
+### [**Makefile**]()
