@@ -39,31 +39,31 @@ very useful, since we will use it in our next projects in C.
 
 | Name                                         | Description                                                                                                          |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [**ft_substr:**](/libft/ft_substr.c)         | returns a substring from the string `s`. The substring begins at index `start` and is of maximum size `len`          |
-| [**ft_strjoin:**](/libft/ft_strjoin.c)       | returns a new string, which is the result of the concatenation of `s1` and `s2`                                      |
-| [**ft_strtrim:**](/libft/ft_strtrim.c)       | returns a copy of `s1` with the characters specified in `set` removed from the beginning and the end of the string   |
-| [**ft_split:**](/libft/ft_split.c)           | returns an array of strings obtained by splitting `s` using the character `c` as a delimiter. The array must end with a NULL pointer |
-| [**ft_itoa:**](/libft/ft_itoa.c)             | returns a string representing the integer received as an argument                                                    |
-| [**ft_strmapi:**](/libft/ft_strmapi.c)       | Applies the function `f` to each character of the string `s`, and passing its index as first argument to create a new string resulting from successive applications of `f` |
-| [**ft_striteri:**](/libft/ft_striteri.c)     | Applies the function `f` on each character of the string passed as argument, passing its index as first argument. Each character is passed by address to `f` to be modified if necessary |
-| [**ft_putchar_fd:**](/libft/ft_putchar_fd.c) | Outputs the character `c` to the given file descriptor                                                               |
-| [**ft_putstr_fd:**](/libft/ft_putstr_fd.c)   | Outputs the string `s` to the given file descriptor                                                                  |
-| [**ft_putendl_fd:**](/libft/ft_putendl_fd.c) | Outputs the string `s` to the given file descriptor followed by a newline                                            |
-| [**ft_putnbr_fd:**](/libft/ft_putnbr_fd.c)   | Outputs the integer `n` to the given file descriptor                                                                 |
+| [**ft_substr**](/libft/ft_substr.c)         | returns a substring from the string `s`. The substring begins at index `start` and is of maximum size `len`          |
+| [**ft_strjoin**](/libft/ft_strjoin.c)       | returns a new string, which is the result of the concatenation of `s1` and `s2`                                      |
+| [**ft_strtrim**](/libft/ft_strtrim.c)       | returns a copy of `s1` with the characters specified in `set` removed from the beginning and the end of the string   |
+| [**ft_split**](/libft/ft_split.c)           | returns an array of strings obtained by splitting `s` using the character `c` as a delimiter. The array must end with a NULL pointer |
+| [**ft_itoa**](/libft/ft_itoa.c)             | returns a string representing the integer received as an argument                                                    |
+| [**ft_strmapi**](/libft/ft_strmapi.c)       | Applies the function `f` to each character of the string `s`, and passing its index as first argument to create a new string resulting from successive applications of `f` |
+| [**ft_striteri**](/libft/ft_striteri.c)     | Applies the function `f` on each character of the string passed as argument, passing its index as first argument. Each character is passed by address to `f` to be modified if necessary |
+| [**ft_putchar_fd**](/libft/ft_putchar_fd.c) | Outputs the character `c` to the given file descriptor                                                               |
+| [**ft_putstr_fd**](/libft/ft_putstr_fd.c)   | Outputs the string `s` to the given file descriptor                                                                  |
+| [**ft_putendl_fd**](/libft/ft_putendl_fd.c) | Outputs the string `s` to the given file descriptor followed by a newline                                            |
+| [**ft_putnbr_fd**](/libft/ft_putnbr_fd.c)   | Outputs the integer `n` to the given file descriptor                                                                 |
 
 ### Bonus functions
 
 | Name                                             | Description                                                                                                      |
 | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| [**ft_lstnew:**](/libft/ft_lstnew.c)             | returns a new node. The member variable `content` is initialized with the value of the parameter `content`. The variable `next` is initialized to NULL |
-| [**ft_lstadd_front:**](/libft/ft_lstadd_front.c) | Adds the node `new` at the beginning of the list                                                                 |
-| [**ft_lstsize:**](/libft/ft_lstsize.c)           | Counts the number of nodes in a list                                                                             |
-| [**ft_lstlast:**](/libft/ft_lstlast.c)           |Returns the last node of the list                                                                                 |
-| [**ft_lstadd_back:**](/libft/ft_lstadd_back.c)   | Adds the node `new` at the end of the list                                                                       |
-| [**ft_lstdelone:**](/libft/ft_lstdelone.c)       | Takes as a parameter a node and frees the memory of the node’s content using the function `del` given as a parameter and free the node. The memory of `next` must not be freed |
-| [**ft_lstclear:**](/libft/ft_lstclear.c)         | Deletes and frees the given node and every successor of that node, using the function `del` and free. Finally, the pointer to the list must be set to NULL |
-| [**ft_lstiter:**](/libft/ft_lstiter.c)           | Iterates the list `lst` and applies the function `f` on the content of each node                                 |
-| [**ft_lstmap:**](/libft/ft_lstmap.c)             | Iterates the list `lst` and applies the function `f` on the content of each node. Creates a new list resulting of the successive applications of the function `f`. The `del` function is used to delete the content of a node if needed |
+| [**ft_lstnew**](/libft/ft_lstnew.c)             | returns a new node. The member variable `content` is initialized with the value of the parameter `content`. The variable `next` is initialized to NULL |
+| [**ft_lstadd_front**](/libft/ft_lstadd_front.c) | Adds the node `new` at the beginning of the list                                                                 |
+| [**ft_lstsize**](/libft/ft_lstsize.c)           | Counts the number of nodes in a list                                                                             |
+| [**ft_lstlast**](/libft/ft_lstlast.c)           |Returns the last node of the list                                                                                 |
+| [**ft_lstadd_back**](/libft/ft_lstadd_back.c)   | Adds the node `new` at the end of the list                                                                       |
+| [**ft_lstdelone**](/libft/ft_lstdelone.c)       | Takes as a parameter a node and frees the memory of the node’s content using the function `del` given as a parameter and free the node. The memory of `next` must not be freed |
+| [**ft_lstclear**](/libft/ft_lstclear.c)         | Deletes and frees the given node and every successor of that node, using the function `del` and free. Finally, the pointer to the list must be set to NULL |
+| [**ft_lstiter**](/libft/ft_lstiter.c)           | Iterates the list `lst` and applies the function `f` on the content of each node                                 |
+| [**ft_lstmap**](/libft/ft_lstmap.c)             | Iterates the list `lst` and applies the function `f` on the content of each node. Creates a new list resulting of the successive applications of the function `f`. The `del` function is used to delete the content of a node if needed |
 
 ## ⚙️ Usage
 
