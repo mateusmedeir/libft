@@ -1,4 +1,4 @@
-<h1 align="center">Libft - 42cursus</h1>
+<h1 align="center">Libft - 42</h1>
 <p align="center"><strong>My very first own library</strong></p>
 
 ## 📑 About
