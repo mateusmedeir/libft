@@ -68,3 +68,11 @@ very useful, since we will use it in our next projects in C.
 ## ⚙️ Usage
 
 ### [**Makefile**](/libft/Makefile)
+
+Command | Description
+------- | -----------
+**make** | compile the library
+**make bonus** | compile the library with the bonus
+**make clean** | delete all object files
+**make fclean** | delete all object files and the library
+**make re** | recompile the library
