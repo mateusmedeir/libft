@@ -2,10 +2,9 @@
 <p align="center"><strong>My very first own library</strong></p>
 
 ## 📑 About
----
+
 > This project consists of creating our own library with some of the most used functions in the C language and others that are exclusive to it. It will be
 very useful, since we will use it in our next projects in C.
----
 
 ### Part 1 - Libc functions
 
@@ -66,6 +65,13 @@ very useful, since we will use it in our next projects in C.
 | [**ft_lstmap**](/libft/ft_lstmap.c)             | Iterates the list `lst` and applies the function `f` on the content of each node. Creates a new list resulting of the successive applications of the function `f`. The `del` function is used to delete the content of a node if needed |
 
 ## ⚙️ Usage
+
+### Instructions
+
+Inside the repository, run:
+```shell
+cd libft && make
+```
 
 ### [**Makefile**](/libft/Makefile)
 
