@@ -70,7 +70,7 @@
 
 Inside the repository, run:
 ```shell
-cd libft && make
+make
 ```
 
 ### [**Makefile**](/libft/Makefile)
