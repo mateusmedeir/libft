@@ -6,13 +6,13 @@
 /*   By: matlopes <matlopes@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:41:41 by matlopes          #+#    #+#             */
-/*   Updated: 2023/11/07 12:33:10 by matlopes         ###   ########.fr       */
+/*   Updated: 2023/11/07 15:53:56 by matlopes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	free_all(char **pointer, int split)
+static int	ft_free_all(char **pointer, int split)
 {
 	while (split >= 0)
 		free (pointer[split--]);
@@ -20,7 +20,7 @@ static int	free_all(char **pointer, int split)
 	return (-1);
 }
 
-static int	how_many_splits(char const *s, char c)
+static int	ft_how_many_splits(char const *s, char c)
 {
 	int	split;
 	int	counter;
@@ -33,7 +33,7 @@ static int	how_many_splits(char const *s, char c)
 	return (split);
 }
 
-static int	put_string(char **pointer, int split, char const *s, char c)
+static int	ft_put_string(char **pointer, int split, char const *s, char c)
 {
 	int	size;
 
@@ -42,7 +42,7 @@ static int	put_string(char **pointer, int split, char const *s, char c)
 		size++;
 	pointer[split] = ft_substr(s, 0, size);
 	if (!pointer[split])
-		return (free_all(pointer, split));
+		return (ft_free_all(pointer, split));
 	return (size);
 }
 
@@ -53,22 +53,23 @@ char	**ft_split(char const *s, char c)
 	int		split;
 	int		max;
 
-	split = 0;
-	max = how_many_splits(s, c);
+	if (!s)
+		return (NULL);
+	split = -1;
+	max = ft_how_many_splits(s, c);
 	pointer = malloc((max + 1) * sizeof(char *));
 	if (!pointer)
 		return (NULL);
-	while (split < max && *s)
+	while (++split < max && *s)
 	{
 		while (*s == c && *s)
 			s++;
 		if (*s)
 		{
-			counter = put_string(pointer, split, s, c);
+			counter = ft_put_string(pointer, split, s, c);
 			if (counter == -1)
 				return (NULL);
 			s += counter;
-			split++;
 		}
 	}
 	pointer[split] = NULL;
