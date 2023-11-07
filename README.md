@@ -68,9 +68,22 @@
 
 ### Instructions
 
+**1. Compiling the library**
+
 Inside the repository, run:
 ```shell
 make
+```
+
+**2. Using it in your code**
+
+To use the library functions in your code, include the header:
+```C
+#include "libft.h"
+```
+and, when compiling your code, use the following flags:
+```shell
+-Lpath/to/libft.a -lft
 ```
 
 ### [**Makefile**](/libft/Makefile)
