@@ -6,7 +6,7 @@
 /*   By: matlopes <matlopes@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:42:45 by matlopes          #+#    #+#             */
-/*   Updated: 2023/11/07 14:47:42 by matlopes         ###   ########.fr       */
+/*   Updated: 2023/11/22 12:24:27 by matlopes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*pointer;
-	int	index;
+	int		index;
 
 	pointer = (char *)s;
 	index = ft_strlen(pointer);

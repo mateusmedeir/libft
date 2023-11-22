@@ -6,7 +6,7 @@
 /*   By: matlopes <matlopes@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:41:41 by matlopes          #+#    #+#             */
-/*   Updated: 2023/11/07 15:53:56 by matlopes         ###   ########.fr       */
+/*   Updated: 2023/11/22 13:00:35 by matlopes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,21 @@ static int	ft_how_many_splits(char const *s, char c)
 
 static int	ft_put_string(char **pointer, int split, char const *s, char c)
 {
+	int	start;
 	int	size;
 
+	start = 0;
 	size = 0;
-	while (s[size] != '\0' && s[size] != c)
+	while (s[start] == c && s[start])
+		start++;
+	if (!s[start])
+		return (start);
+	while (s[start + size] != '\0' && s[start + size] != c)
 		size++;
-	pointer[split] = ft_substr(s, 0, size);
+	pointer[split] = ft_substr(s, start, size);
 	if (!pointer[split])
 		return (ft_free_all(pointer, split));
-	return (size);
+	return (start + size);
 }
 
 char	**ft_split(char const *s, char c)
@@ -62,15 +68,10 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	while (++split < max && *s)
 	{
-		while (*s == c && *s)
-			s++;
-		if (*s)
-		{
-			counter = ft_put_string(pointer, split, s, c);
-			if (counter == -1)
-				return (NULL);
-			s += counter;
-		}
+		counter = ft_put_string(pointer, split, s, c);
+		if (counter == -1)
+			return (NULL);
+		s += counter;
 	}
 	pointer[split] = NULL;
 	return (pointer);
