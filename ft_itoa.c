@@ -6,29 +6,11 @@
 /*   By: matlopes <matlopes@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:39:48 by matlopes          #+#    #+#             */
-/*   Updated: 2023/11/07 09:45:31 by matlopes         ###   ########.fr       */
+/*   Updated: 2023/11/27 12:34:02 by matlopes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_intlen(long int n)
-{
-	int	counter;
-
-	counter = 1;
-	if (n < 0)
-	{
-		counter++;
-		n *= -1;
-	}
-	while (n > 9)
-	{
-		n /= 10;
-		counter++;
-	}
-	return (counter);
-}
 
 char	*ft_itoa(int n)
 {
