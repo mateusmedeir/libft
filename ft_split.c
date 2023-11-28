@@ -6,19 +6,11 @@
 /*   By: matlopes <matlopes@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:41:41 by matlopes          #+#    #+#             */
-/*   Updated: 2023/11/22 13:00:35 by matlopes         ###   ########.fr       */
+/*   Updated: 2023/11/28 16:42:14 by matlopes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_free_all(char **pointer, int split)
-{
-	while (split >= 0)
-		free (pointer[split--]);
-	free (pointer);
-	return (-1);
-}
 
 static int	ft_how_many_splits(char const *s, char c)
 {
@@ -48,7 +40,10 @@ static int	ft_put_string(char **pointer, int split, char const *s, char c)
 		size++;
 	pointer[split] = ft_substr(s, start, size);
 	if (!pointer[split])
-		return (ft_free_all(pointer, split));
+	{
+		ft_free_arrays(pointer);
+		return (-1);
+	}
 	return (start + size);
 }
 

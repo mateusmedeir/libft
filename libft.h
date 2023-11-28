@@ -6,7 +6,7 @@
 /*   By: matlopes <matlopes@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 11:57:18 by matlopes          #+#    #+#             */
-/*   Updated: 2023/11/27 14:07:36 by matlopes         ###   ########.fr       */
+/*   Updated: 2023/11/28 16:41:46 by matlopes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ size_t	ft_intlen(int nbr);
 char	*ft_strjoin_new(char *old, char *str);
 int		ft_printf(const char *str, ...);
 char	*get_next_line(int fd);
+void	ft_free_arrays(char *array[]);
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);

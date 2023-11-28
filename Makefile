@@ -39,7 +39,8 @@ SRCS		= ft_isalpha.c     \
 			  ft_intlen.c      \
 			  ft_strjoin_new.c \
 			  ft_printf.c      \
-			  get_next_line.c
+			  get_next_line.c  \
+			  ft_free_arrays.c
 
 SRCS_BONUS	= ft_lstnew_bonus.c       \
 			  ft_lstadd_front_bonus.c \
